@@ -1,0 +1,51 @@
+.leadership-section {
+  background-color: #DCC5B2;
+  color: #2D2320;
+  padding: 4rem 0;
+}
+
+.leadership-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.leadership-col {
+  max-width: 200px;
+}
+
+.leadership-card {
+  background-color: #DCC5B2;
+  color: #2D2320;
+  border: none;
+}
+
+.leadership-img-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+  border-radius: 50%; /* Make the wrapper circular */
+}
+
+.leadership-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Make the image circular */
+  box-shadow: 0 2px 8px rgba(44, 44, 44, 0.08);
+}
+
+.leadership-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.leadership-role {
+  color: #736e69;
+  font-size: 1rem;
+  margin-bottom: 0;
+}

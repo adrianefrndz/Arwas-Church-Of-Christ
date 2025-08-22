@@ -1,0 +1,21 @@
+
+
+@import './components/Navbar.css';
+@import './components/Home.css';
+@import './components/About.css';
+@import './components/Events.css';
+@import './components/Gallery.css';
+@import './components/Footer.css';
+
+body {
+	margin: 0;
+	font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+	background: #f6f7fb;
+	min-height: 100vh;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}

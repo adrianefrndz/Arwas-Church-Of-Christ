@@ -1,0 +1,79 @@
+.music-team-section {
+  overflow: hidden;
+  background-color: #222222;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+.music-team-reveal-btn {
+  background: transparent;
+  border: 1.5px solid #ffffff;
+  padding: 0.35rem 1.25rem;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.75rem 0;
+  color: #ffffff;
+}
+
+.music-team-reveal-btn:hover {
+  background: #2D2320;
+  color: #DCC5B2;
+  transform: scale(1.05);
+}
+
+.team-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+  max-height: 0;
+  pointer-events: none;
+}
+
+.team-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 800px;
+  pointer-events: all;
+}
+
+.team-member-card {
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+
+.team-container.visible .team-member-card {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.team-container.visible .team-member-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.team-container.visible .team-member-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.team-container.visible .team-member-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.music-note-icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+  transform: rotate(0deg);
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.music-team-reveal-btn:hover .music-note-icon {
+  transform: rotate(360deg);
+}
+
+.card-text {
+  color: #bab3ac;
+  font-size: 0.75rem;
+}

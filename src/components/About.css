@@ -1,0 +1,142 @@
+
+.worship-info-collapse {
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  opacity: 0;
+  max-height: 0;
+  padding: 0 1rem;
+  will-change: opacity, max-height;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.worship-info-collapse .details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.card-body.fw-semibold {
+  padding: 1rem 1rem 0.5rem;
+  color: #6c5b03;
+}
+.about {
+  background: #232946;
+
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #eebbc3;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.about-list li {
+  background: #393e46;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  min-width: 180px;
+}
+
+/* Add this to About.css or your relevant CSS file */
+.About-card-title {
+  color: #FFD700; /* Replace with your desired color */
+}
+
+.about-section {
+  background-color: #DCC5B2;
+  color: #2D2320;
+  padding: 4rem 0;
+}
+
+.about-img-col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 0;
+  margin-left: -16px;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 3rem;
+  object-fit: cover;
+  aspect-ratio: 6/3;
+  filter: grayscale(100%);
+  opacity: 1;
+ 
+}
+
+.about-mission-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.about-desc {
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  text-align: left;
+}
+
+.about-btn {
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #198754;
+  color: #fff;
+  border: none;
+  transition: background 0.2s;
+}
+
+.about-btn:hover {
+  background: #146c43;
+  color: #fff;
+}
+
+.about-btn-arrow {
+  font-size: 1.2em;
+}
+
+@media (max-width: 767px) {
+  .about-img-col {
+    margin-bottom: 1.5rem;
+  }
+  .about-mission-col {
+    align-items: center;
+    text-align: center;
+  }
+  .about-title,
+  .about-desc {
+    text-align: center;
+  }
+}
+

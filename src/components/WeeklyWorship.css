@@ -1,0 +1,99 @@
+.weekly-worship-section {
+  background: #222222;
+  color: #ffffff;
+  padding: 2.5rem 0;
+  display: flex;
+  min-height: 40vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.weekly-worship-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch; /* Stretch columns vertically */
+  max-width: 1400px;    /* Increased max-width for more horizontal space */
+  width: 95vw;          /* Use most of the viewport width */
+  border-radius: 1rem;
+  padding: 1.5rem 3.5rem; /* Increased horizontal padding */
+  gap: 3rem;             /* Increased gap between columns */
+
+}
+
+.weekly-worship-col {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 200px; /* Slightly wider columns */
+}
+
+.weekly-worship-col.left {
+  align-items: flex-start;
+  text-align: left;
+   padding-left: 0;
+  margin-left: -128px; /* Move more to the left, adjust as needed */
+}
+
+.weekly-worship-col.right {
+  align-items: flex-end;
+  text-align: left;
+}
+
+.weekly-worship-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.weekly-worship-title {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.gap2 {
+  height: 2rem;
+}
+.gap {
+  height: 1rem;
+}
+
+.schedule
+ {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .weekly-worship-container {
+    max-width: 98vw;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+  .weekly-worship-col {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  .weekly-worship-container {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    gap: 1.5rem;
+    max-width: 98vw;
+    padding: 1.5rem 0.5rem;
+  }
+  .weekly-worship-col,
+  .weekly-worship-col.middle,
+  .weekly-worship-col.right {
+    align-items: center !important;
+    text-align: center !important;
+    min-width: 0;
+  }
+}
