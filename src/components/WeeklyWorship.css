@@ -32,9 +32,8 @@
 .weekly-worship-col.left {
   align-items: flex-start;
   text-align: left;
-   padding-left: 0;
-  /* margin-left: -128px; /* Move more to the left, adjust as needed */
-} */
+  margin-left: 64px; 
+} 
 
 .weekly-worship-col.right {
   align-items: flex-end;
